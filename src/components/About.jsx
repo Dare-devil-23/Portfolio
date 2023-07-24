@@ -5,7 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
-import { Education, Projects } from "./data";
+import { Education, Projects, Experiance } from "./data";
 import Contact from "./Contact";
 import { IoLogoGithub } from "react-icons/io5";
 import sahith from "../assets/sahith.jpeg";
@@ -43,7 +43,7 @@ export default function About() {
           <button className="w-full md:w-full relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
             <span className="w-full md:w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               <a
-                href="https://gateway.ipfs.io/ipfs/QmTLrGtd8GEMmWwSHALogNeMKVKgvfdPwmvqsyAQzHFZBQ"
+                href="https://pin.ski/3Y2RWkG"
                 target={"_blank"}
                 download
               >
@@ -52,6 +52,41 @@ export default function About() {
             </span>
           </button>
         </div>
+      </section>
+      <div className="flex justify-center h-[100px] items-center text-gray-400 my-4 text-3xl">
+        Experience
+      </div>
+      <section className="w-full flex items-center justify-center">
+        <VerticalTimeline>
+          {Experiance &&
+            Experiance.map((n) => (
+              <VerticalTimelineElement
+                key={n.id}
+                className="vertical-timeline-element--work"
+                contentStyle={{
+                  background: "rgb(21, 24, 31)",
+                  color: "#888",
+                }}
+                contentArrowStyle={{
+                  borderRight: "7px solid  rgb(21, 24, 31)",
+                }}
+                date={n.date}
+                iconStyle={{ background: "rgb(21, 24, 31)", color: "#888" }}
+                icon={n.iconsSrc}
+              >
+                <h3 className="vertical-timeline-element-title">{n.title}</h3>
+                <h4>Company : {n.company}</h4>
+                <h4 className="vertical-timeline-element-subtitle">
+                  {n.location}
+                </h4>
+                <p>Skills : {
+                  n.skills.map((skill, i)=>(
+                    <span key={i} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300 truncate">{skill}</span>
+                  ))
+                }</p>
+              </VerticalTimelineElement>
+            ))}
+        </VerticalTimeline>
       </section>
       <div className="flex justify-center h-[100px] items-center text-gray-400 my-4 text-3xl">
         Education

@@ -34,7 +34,7 @@ export default function Navbar() {
             Contact
           </a>
           <a
-            href="https://gateway.ipfs.io/ipfs/QmTLrGtd8GEMmWwSHALogNeMKVKgvfdPwmvqsyAQzHFZBQ" 
+            href="https://pin.ski/3Y2RWkG" 
             target={"_blank"}
             className="ml-auto text-base text-slate-500 font-medium hover:text-slate-100 cursor-pointer border-slate-500 px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
           >

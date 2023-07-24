@@ -14,7 +14,7 @@ import img3 from "../assets/ExerciseTracker.png";
 export const Education = [
   {
     id: 1,
-    date: "2019 - present",
+    date: "2019 - 2023",
     iconsSrc: <IoCodeWorking />,
     title: "IIIT, RGUKTN",
     location: "Nuzvid, AP",
@@ -108,3 +108,15 @@ export const SocialLinks = [
     link: "",
   },
 ];
+
+export const Experiance = [
+  {
+    id: 1,
+    date: "2022 - Present",
+    iconsSrc: <IoCodeWorking />,
+    title: "SE-React (intern)",
+    company:'PromptCloud',
+    location: "Banglore (remote)",
+    skills: ['React JS', 'Ruby on Rails', 'Git', 'Github', 'Jenkins', 'RSpec', 'Axios'],
+  }
+]
