@@ -112,9 +112,18 @@ export const SocialLinks = [
 export const Experiance = [
   {
     id: 1,
-    date: "2022 - Present",
+    date: "2022 - 2023",
     iconsSrc: <IoCodeWorking />,
     title: "SE-React (intern)",
+    company:'PromptCloud',
+    location: "Banglore (remote)",
+    skills: ['React JS', 'Ruby on Rails', 'Git', 'Github', 'Jenkins', 'RSpec', 'Axios'],
+  },
+  {
+    id: 2,
+    date: "2023 - Present",
+    iconsSrc: <IoCodeWorking />,
+    title: "Associate Software Engineer",
     company:'PromptCloud',
     location: "Banglore (remote)",
     skills: ['React JS', 'Ruby on Rails', 'Git', 'Github', 'Jenkins', 'RSpec', 'Axios'],
