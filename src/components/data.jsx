@@ -10,6 +10,7 @@ import {
 import img1 from "../assets/DResults.png";
 import img2 from "../assets/CyberInfo.png";
 import img3 from "../assets/ExerciseTracker.png";
+import img4 from "../assets/dizzyfit.png";
 
 export const Education = [
   {
@@ -66,6 +67,14 @@ export const Projects = [
     github: "https://github.com/Dare-devil-23/Exercise-Tracker",
     url: "http://exercise-tracker-by-sahith.surge.sh/",
   },
+  {
+    id: 4,
+    name: "DizzyFit",
+    imageSrc: img4,
+    techs: "NextJs, Tailwind, framer-motion",
+    github: "https://github.com/Dare-devil-23/dizzyfit",
+    url: "https://dizzyfit.vercel.app/"
+  }
 ];
 
 export const SocialLinks = [
