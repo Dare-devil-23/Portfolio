@@ -79,11 +79,16 @@ export default function About() {
                 <h4 className="vertical-timeline-element-subtitle">
                   {n.location}
                 </h4>
-                <p>Skills : {
-                  n.skills.map((skill, i)=>(
-                    <span key={i} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300 truncate">{skill}</span>
-                  ))
-                }</p>
+                <div className="mt-2">
+                  Skills : 
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {
+                      n.skills.map((skill, i)=>(
+                        <div key={i} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{skill}</div>
+                      )) 
+                    }
+                  </div>
+                </div>
               </VerticalTimelineElement>
             ))}
         </VerticalTimeline>
